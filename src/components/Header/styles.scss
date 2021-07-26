@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    transition: 0.4s;
+
+    nav {
+        width: 90%;
+        max-width: 900px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 3.2rem 0;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        ul {
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+
+            li {
+                font-size: 1.6rem;
+                color: #fff;
+                cursor: pointer;
+
+                &:hover {
+                    color: #00ff5f;
+                }
+            }
+        }
+    }
+}
+
+.transparent {
+    background: transparent;
+}
+
+.solid {
+    background: #181818;
+}

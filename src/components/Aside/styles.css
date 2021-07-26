@@ -1,25 +1,9 @@
 aside {
-    height: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-
-    background: #181818;
+    bottom: 16px;
+    right: 16px;
     padding: 1.6rem;
-}
-
-aside img {
-    width: 24px;
-    height: 24px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
-    height: 100%;
+    z-index: 50;
 }
 
 .social {
@@ -28,10 +12,10 @@ nav {
     gap: 1.6rem;
 }
 
-.social a {
+a {
     color: #fff;
 }
 
-.social a:hover {
+a:hover {
     color: #00ff5f;
 }
