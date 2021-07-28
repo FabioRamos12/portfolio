@@ -8,7 +8,7 @@ export function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 300;
+            const show = window.scrollY > 200;
             if (show) {
                 setNavBackground("solid");
             } else {
@@ -24,11 +24,19 @@ export function Header() {
     return (
         <header className={navBackground}>
             <nav>
-                <img src={logoImg} alt="Logo" />
+                <a href="/">
+                    <img src={logoImg} alt="Logo" />
+                </a>
                 <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>Tecnologias</li>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="">
+                        <li>Projetos</li>
+                    </a>
+                    <a href="">
+                        <li>Tecnologias</li>
+                    </a>
                 </ul>
             </nav>
         </header>
